@@ -61,14 +61,15 @@ body {
 
 /* Title centered at top */
 #titolo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 300%; /* inherits from header-content and scales */
+  position: relative; /* or just remove position:absolute */
+  margin: 0 auto;
+  font-size: 350%;
   text-align: center;
+  padding-top: 0.5em; /* give some space from top */
+  max-width: 90vw;    /* prevent overflow on small screens */
+  word-wrap: break-word;
 }
+
 
 /* Menu icon aligned to top-right */
 #menu {
