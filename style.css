@@ -63,41 +63,35 @@ body {
     color: white;
 }
 
-/* Title centered at top */
+#header-content {
+  position: relative;
+  height: 60px; /* fixed height */
+  width: 100%;
+}
+
 #titolo {
-    position: relative;
-    /* or just remove position:absolute */
-    margin: 0 auto;
-    font-size: 350%;
-    text-align: center;
-    padding-top: 0.5em;
-    /* give some space from top */
-    max-width: 90vw;
-    white-space: normal;
-    /* allow wrapping */
-    word-break: normal;
-    /* prevent breaking words */
-    overflow-wrap: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  z-index: 1;
 }
 
-
-/* Menu icon aligned to top-right */
 #menu {
-    position: absolute;
-    top: 0.5em;
-    /* add a little top padding so it’s not flush */
-    right: 1em;
-    width: 3em;
-    /* good for scaling */
-    height: auto;
-    cursor: pointer;
-    max-width: 10vw;
-    /* ensure it scales with viewport width */
-    max-height: 3em;
-    /* optional max height */
-    z-index: 10;
-    /* ensure it stays on top */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  z-index: 2;
 }
+
+
 
 
 .aligned {
