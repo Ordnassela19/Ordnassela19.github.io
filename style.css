@@ -73,8 +73,11 @@ body {
     padding-top: 0.5em;
     /* give some space from top */
     max-width: 90vw;
-    /* prevent overflow on small screens */
-    word-wrap: break-word;
+    white-space: normal;
+    /* allow wrapping */
+    word-break: normal;
+    /* prevent breaking words */
+    overflow-wrap: normal;
 }
 
 
