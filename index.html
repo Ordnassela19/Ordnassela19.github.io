@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fantacalcio</title>
 </head>
 
 <body>
-<!--TODO: add login form -->
-    <h1>Fantacalcio</h1>
-    <p>Questo Fantacalcio nasce nel 2022. È stato il primo fantacalcio per molti dei partecipanti, avvicinando molti di noi a questo gioco e dandoci un motivo in più per insultarci.</p>
+    <!--TODO: add login form -->
+    <div id="header-content">
+    <span onclick="openNav()">
+        <img width="5%" src="images/menu_bianco.png" id="menu">
+    </span>
+    <h1 id="titolo">Fantacalcio</h1>
+</div>
+    <p>Questo Fantacalcio nasce nel 2022. È stato il primo fantacalcio per molti dei partecipanti, avvicinando molti di
+        noi a questo gioco e dandoci un motivo in più per insultarci.</p>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Regolamento</a>
+        <a href="#">Premi</a>
+        <a href="#">Classifiche passate</a>
+    </div>
 
 </body>
 
