@@ -124,3 +124,26 @@ td {
     padding-right: 4px;
     text-align: right;
 }
+
+#record {
+  margin: 2em auto;        /* centers the table */
+  width: 90%;              /* adjust width as needed (e.g. 50% for even smaller) */
+  max-width: 600px;        /* optional: prevent it from growing too wide */
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: large;        /* smaller than x-large */
+}
+
+#record th,
+#record td {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* First column only as wide as content */
+#record th:first-child,
+#record td:first-child {
+  white-space: nowrap;
+  width: 1%;
+  text-align: left;
+}
