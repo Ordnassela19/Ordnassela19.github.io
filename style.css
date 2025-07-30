@@ -76,7 +76,7 @@ body {
 }
 
 #menu {
-  width: 40px;
+  width: 35px;
   height: auto;
   cursor: pointer;
   flex-shrink: 0;
