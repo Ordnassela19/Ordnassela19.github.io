@@ -80,9 +80,12 @@ body {
   cursor: pointer;
 }
 
-p{
-    margin-top: 4em;
+.aligned{
     text-align: justify;
     padding-left: 25%;
     padding-right: 25%;
+}
+
+p{
+    font-size: larger;
 }
