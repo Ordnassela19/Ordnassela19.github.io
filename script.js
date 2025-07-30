@@ -7,3 +7,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+function showTable() {
+  const selected = document.getElementById("tableSelect").value;
+  const tables = document.querySelectorAll(".data-table");
+
+  tables.forEach(table => {
+    table.style.display = (table.id === selected) ? "table" : "none";
+  });
+}
