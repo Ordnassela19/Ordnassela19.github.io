@@ -87,10 +87,14 @@ body {
 
 
 
-.aligned {
-    text-align: justify;
-    padding-left: 20%;
-    padding-right: 20%;
+.justified {
+    text-align: justified;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.centered {
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 table,
@@ -116,6 +120,10 @@ td {
     color: black;
 }
 
+.data-table, #record{
+  margin: 2em auto;
+  width: 50%;
+}
 .data-table td.row-number,
 .data-table th:first-child {
     width: 1%;
@@ -125,20 +133,6 @@ td {
     text-align: right;
 }
 
-#record {
-  margin: 2em auto;        /* centers the table */
-  width: 90%;              /* adjust width as needed (e.g. 50% for even smaller) */
-  max-width: 600px;        /* optional: prevent it from growing too wide */
-  border-collapse: collapse;
-  table-layout: auto;
-  font-size: large;        /* smaller than x-large */
-}
-
-#record th,
-#record td {
-  border: 1px solid #ccc;
-  text-align: center;
-}
 
 /* First column only as wide as content */
 #record th:first-child,
