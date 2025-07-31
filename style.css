@@ -1,143 +1,156 @@
-/* The side navigation menu */
-.sidenav {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    right: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
-}
+  /* The side navigation menu */
+  .sidenav {
+      height: 100%;
+      /* 100% Full-height */
+      width: 0;
+      /* 0 width - change this with JavaScript */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Stay on top */
+      top: 0;
+      /* Stay at the top */
+      right: 0;
+      background-color: #111;
+      /* Black*/
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      padding-top: 60px;
+      /* Place content 60px from the top */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in the sidenav */
+  }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+  /* The navigation menu links */
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+
+  body {
+      background-color: #0d1117;
+      color: white;
+  }
+
+  #header-content {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1em;
+  }
+
+  #titolo {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-
-body {
-    background-color: #0d1117;
-    color: white;
-}
-
-#header-content {
-  position: relative;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0 1em;
-}
-
-#titolo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  font-size: 2.3rem;
-  white-space: nowrap;
-  max-width: calc(100% - 80px); /* Prevents overlapping the menu */
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  pointer-events: none;
-  user-select: none;
-}
-
-#menu {
-  width: 35px;
-  height: auto;
-  cursor: pointer;
-  flex-shrink: 0;
-  z-index: 1; /* ensure it’s above the title if overlapping happens */
-}
-
-
-
-
-
-.justified {
-    text-align: justified;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-.centered {
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-table,
-th,
-td {
-    width: 90%;
-    border: 1px solid white;
-    border-collapse: collapse;
-}
-
-.vincitore {
-    background-color: gold;
-    color: black;
-}
-
-.secondo {
-    background-color: silver;
-    color: black;
-}
-
-.terzo {
-    background-color: #cd7f32;
-    color: black;
-}
-
-.data-table, #record{
-  margin: 2em auto;
-  width: 50%;
-}
-.data-table td.row-number,
-.data-table th:first-child {
-    width: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 2.3rem;
     white-space: nowrap;
-    padding-left: 4px;
-    padding-right: 4px;
-    text-align: right;
+    max-width: calc(100% - 80px); /* Prevents overlapping the menu */
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  #menu {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 1; /* ensure it’s above the title if overlapping happens */
+  }
+
+
+
+  .justified {
+      text-align: justified;
+      padding-left: 25%;
+      padding-right: 25%;
+  }
+  .centered {
+      margin: 2em auto;
+      padding-left: 25%;
+      padding-right: 25%;
+  }
+
+
+
+  .vincitore {
+      background-color: gold;
+      color: black;
+  }
+
+  .secondo {
+      background-color: silver;
+      color: black;
+  }
+
+  .terzo {
+      background-color: #cd7f32;
+      color: black;
+  }
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
 }
 
+th, td {
+  border: 1px solid white;
+  padding: 0.5em;
+  text-align: center;
+}
 
-/* First column only as wide as content */
+#record {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: large;
+}
+
 #record th:first-child,
 #record td:first-child {
   white-space: nowrap;
   width: 1%;
   text-align: left;
+}
+
+.data-table {
+  max-width: 700px;
+  margin: 2em auto;
+  font-size: large;
+}
+
+.data-table td.row-number,
+.data-table th:first-child {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+  padding-left: 4px;
+  padding-right: 4px;
 }
