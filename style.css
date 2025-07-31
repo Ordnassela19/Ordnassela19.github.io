@@ -127,27 +127,15 @@ th, td {
   text-align: center;
 }
 
-#record {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: large;
-}
 
-#record th:first-child,
-#record td:first-child {
-  white-space: nowrap;
-  width: 1%;
-  text-align: left;
-}
-
-.data-table {
+.tabella {
   max-width: 700px;
   margin: 2em auto;
   font-size: large;
 }
 
-.data-table td.row-number,
-.data-table th:first-child {
+.tabella td.row-number,
+.tabella th:first-child {
   width: 1%;
   white-space: nowrap;
   text-align: right;
