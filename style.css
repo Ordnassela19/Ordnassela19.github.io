@@ -142,3 +142,36 @@ th, td {
   padding-left: 4px;
   padding-right: 4px;
 }
+
+/*navbar storico*/
+.top_navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: #111;
+  width: 25%;
+  margin: 2em auto;
+}
+
+.top_navbar li {
+  float: center;
+}
+
+.top_navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.top_navbar li a:hover:not(.active) {
+  background-color: #535353;
+}
+
+.top_navbar li a.active {
+  color: white;
+  background-color: #404341;
+}
