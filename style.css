@@ -1,4 +1,4 @@
-  @property --sfondo {
+@property --sfondo {
   syntax: "<color>";
   inherits: true;
   initial-value: #0D1117;
@@ -58,32 +58,31 @@
       background-color: var(--sfondo);
       color: white;
   }
-
-  #header-content {
+  
+  .header-bar {
+    width: 100%;
+    justify-content: center;
     position: relative;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 1em;
-  }
+    min-height: 60px;
+}
 
-  #titolo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
+#titolo {
+    color: cornflowerblue;
+    margin: 0 auto;
     font-size: 2.3rem;
-    white-space: nowrap;
-    max-width: calc(100% - 80px); /* Prevents overlapping the menu */
     text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    pointer-events: none;
-    user-select: none;
-  }
+    flex: 1;
+}
 
-  #menu {
+.menu-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#menu {
     width: 35px;
     height: auto;
     cursor: pointer;
